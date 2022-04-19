@@ -9,5 +9,8 @@ while prod == "s" or prod == "sim":
     prod = input("Tem mais produtos? (Digite -1 se não tiver mais produtos) ")
     if prod == -1:
         break
-
-print(f"O valor da compra foi de R${total}!")
+    
+if total != 0:
+    print(f"O valor da compra foi de R${total}!")
+else:
+    print(f"Programa Encerrado!")
